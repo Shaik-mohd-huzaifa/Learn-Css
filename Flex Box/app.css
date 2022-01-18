@@ -10,6 +10,10 @@ h1 {
   margin: auto;
   height: 500px;
   display: flex;
+  padding: 5px;
+  column-gap: 5px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .MainContainer div {
