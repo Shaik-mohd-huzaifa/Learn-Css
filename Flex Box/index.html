@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
     <title>Document</title>
+    
 </head>
+
 <body>
+ 
     <div class="header"><h1>World Of Flex Box</h1>
     <div class="Obstracle1"></div>
     <div class="Obstracle2"></div>
     <div class="Obstracle3"></div>
     <div class="Obstracle4"></div>
     </div>
-    <div>
+    <div class="Selectproperties">
       <h2>Properties</h2>
       <ul class="ListProperties">
-        <li>Flex Direction</li>
-        <li>Justify Content</li>
-        <li>Align Items</li>
-        <li>Align Content</li>
-        <li>Flex Wrap</li>
-        <li>Align Self</li>
+        <li class="toggleButton active">Flex Direction</li>
+        <li class="toggleButton">Justify Content</li>
+        <li class="toggleButton">Align Items</li>
+        <li class="toggleButton">Align Content</li>
+        <li class="toggleButton">Flex Wrap</li>
+        <li class="toggleButton">Align Self</li>
       </ul>
     </div>
     <div class="MainContainer" style="background-color: #0b0b45;">
@@ -32,6 +35,37 @@
       <div style="background-color: #afff19;"></div>
       <div style="background-color: #ffae19;"></div>
     </div>
-
+    <script>
+      const toggleButtons = document.querySelectorAll('.toggleButton');
+        
+      toggleButtons.forEach( toggleButton => {
+          toggleButton.addEventListener( 'click', () => {
+                removeactiveClasses()
+                toggleButton.classList.add('active')
+            })
+        })  
+        function removeactiveClasses() {
+          toggleButtons.forEach( toggleButton => {
+            toggleButton.classList.remove('active')
+            })
+        }
+  
+  /*        // Example
+        const panels = document.querySelectorAll('.panel')
+        
+        panels.forEach( panel => {
+            panel.addEventListener( 'click', () => {
+                removeactiveClasses()
+                panel.classList.add('active')
+            })
+        })
+        
+        
+        function removeactiveClasses() {
+            panels.forEach( panel => {
+                panel.classList.remove('active')
+            })
+        }*/
+    </script>
 </body>
 </html>
