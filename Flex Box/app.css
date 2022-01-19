@@ -137,3 +137,24 @@ h1 {
   box-shadow: 1px 1px 1px grey;
   color: white;
 }
+
+.sampleli {
+  display: flex;
+}
+
+.sampleli li {
+  width: 100px;
+}
+
+.subli {
+  padding: 0px;
+  display: none;
+}
+
+.sampleli:hover .subli {
+  display: block;
+}
+
+.subli li:hover {
+  transform: scale(1.2);
+}
