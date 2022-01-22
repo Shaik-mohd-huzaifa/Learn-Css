@@ -10,17 +10,17 @@
 </head>
 
 <body>
- 
-    <div class="header"><h1>World Of Flex Box</h1>
+  
+    <div class="header" id="header"><h1>World Of Flex Box</h1>
     <div class="Obstracle1"></div>
     <div class="Obstracle2"></div>
     <div class="Obstracle3"></div>
     <div class="Obstracle4"></div>
     </div>
-    <div class="Selectproperties">
+    <div class="Selectproperties" id="Selectproperties">
       <h2>Properties</h2>
-      <ul class="ListProperties">
-        <li class="toggleButton active">Flex Direction</li>
+      <ul class="ListProperties" id="ListProperties">
+        <li class="toggleButton active" id="Direction">Flex Direction</li>
         <li class="toggleButton">Justify Content</li>
         <li class="toggleButton">Align Items</li>
         <li class="toggleButton">Align Content</li>
@@ -29,6 +29,49 @@
         <li class="toggleButton">Flex</li>
       </ul>
     </div>
+ <!--flex-direction section-->   
+    <div class="Flex-Direction" id="Flexdirection">
+      <h2>Flex Direction</h2>
+      <ul class="FlexDirectionMenu DirectionProperties" id="Directions">
+        <li class="toggleButtonD active" value="Row">Row</li>
+        <li class="toggleButtonD" value="Row-reverse">Row-reverse</li>
+        <li class="toggleButtonD" value="Column">Column</li>
+        <li class="toggleButtonD"value="Column-reverse">Column-reverse</li>
+      </ul>
+      <h3 class="ContainerHeader">Flex-direction: row;</h3>
+      <div class="row container" style="background-color: #0b0b45;">
+        <div class="Displayele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Displayele elements" style="background-color: #8bc34a;"></div>
+        <div class="Displayele elements" style="background-color: #ff3333;"></div>
+        <div class="Displayele elements" style="background-color: #afff19;"></div>
+        <div class="Displayele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: row-reverse;</h3>
+      <div class="row-reverse container" style="background-color: #0b0b45;">
+        <div class="Displayele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Displayele elements" style="background-color: #8bc34a;"></div>
+        <div class="Displayele elements" style="background-color: #ff3333;"></div>
+        <div class="Displayele elements" style="background-color: #afff19;"></div>
+        <div class="Displayele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: Column;</h3>
+      <div class="column container" style="background-color: #0b0b45;">
+        <div class="Displayele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Displayele elements" style="background-color: #8bc34a;"></div>
+        <div class="Displayele elements" style="background-color: #ff3333;"></div>
+        <div class="Displayele elements" style="background-color: #afff19;"></div>
+        <div class="Displayele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: Column-reverse;</h3>
+      <div class="column-reverse container" style="background-color: #0b0b45;">
+        <div class="Displayele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Displayele elements" style="background-color: #8bc34a;"></div>
+        <div class="Displayele elements" style="background-color: #ff3333;"></div>
+        <div class="Displayele elements" style="background-color: #afff19;"></div>
+        <div class="Displayele elements" style="background-color: #ffae19;"></div>
+      </div>
+    </div>
+    
     <div class="MainContainer" style="background-color: #0b0b45;">
       <div style="background-color: #ffc6d0;"></div>
       <div style="background-color: #8bc34a;"></div>
@@ -36,6 +79,58 @@
       <div style="background-color: #afff19;"></div>
       <div style="background-color: #ffae19;"></div>
     </div>
+<!--flexdirection section-->   
+    <div class="Justify-content" id="Justify-content">
+      <h2>Flex Direction</h2>
+      <ul class="Justifycontentmenu JustifyProperties" id="Directions">
+        <li class="toggleButtonJ active" value="Flex-start">Flex-start</Flex-start></li>
+        <li class="toggleButtonJ" value="Flex-end">Flex-end</li>
+        <li class="toggleButtonJ" value="Space-around">Space-around</li>
+        <li class="toggleButtonJ"value="Space-between">Space-between</li>
+        <li class="toggleButtonJ"value="Space-evenly">Space-evenly</li>
+      </ul>
+      <h3 class="ContainerHeader">Flex-direction: Flex-start;</h3>
+      <div class="row container" style="background-color: #0b0b45;">
+        <div class="Justifyele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Justifyele elements" style="background-color: #8bc34a;"></div>
+        <div class="Justifyele elements" style="background-color: #ff3333;"></div>
+        <div class="Justifyele elements" style="background-color: #afff19;"></div>
+        <div class="Justifyele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: Flex-end;</h3>
+      <div class="row-reverse container" style="background-color: #0b0b45;">
+        <div class="Justifyele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Justifyele elements" style="background-color: #8bc34a;"></div>
+        <div class="Justifyele elements" style="background-color: #ff3333;"></div>
+        <div class="Justifyele elements" style="background-color: #afff19;"></div>
+        <div class="Justifyele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: Space-around;</h3>
+      <div class="column container" style="background-color: #0b0b45;">
+        <div class="Justifyele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Justifyele elements" style="background-color: #8bc34a;"></div>
+        <div class="Justifyele elements" style="background-color: #ff3333;"></div>
+        <div class="Justifyele elements" style="background-color: #afff19;"></div>
+        <div class="Justifyele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: Space-between;</h3>
+      <div class="column-reverse container" style="background-color: #0b0b45;">
+        <div class="Justifyele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Justifyele elements" style="background-color: #8bc34a;"></div>
+        <div class="Justifyele elements" style="background-color: #ff3333;"></div>
+        <div class="Justifyele elements" style="background-color: #afff19;"></div>
+        <div class="Justifyele elements" style="background-color: #ffae19;"></div>
+      </div>
+      <h3 class="ContainerHeader">Flex-direction: Space-evenly;</h3>
+      <div class="column-reverse container" style="background-color: #0b0b45;">
+        <div class="Justifyele elements" style="background-color: #ffc6d0;"></div>
+        <div class="Justifyele elements" style="background-color: #8bc34a;"></div>
+        <div class="Justifyele elements" style="background-color: #ff3333;"></div>
+        <div class="Justifyele elements" style="background-color: #afff19;"></div>
+        <div class="Justifyele elements" style="background-color: #ffae19;"></div>
+      </div>
+    </div>
+
 
     <script>
       const toggleButtons = document.querySelectorAll('.toggleButton');
@@ -51,21 +146,34 @@
             toggleButton.classList.remove('active')
             })
         }
-  
-  /*        // Example
-        const panels = document.querySelectorAll('.panel')
+/*
+        // for the flex-direction List items
+        const toggleButtonsforDiretion = document.querySelectorAll('.toggleButtonD');
         
-        panels.forEach( panel => {
-            panel.addEventListener( 'click', () => {
+       toggleButtonsforDiretion.forEach( toggleButtonD => {
+          toggleButtonD.addEventListener( 'click', () => {
                 removeactiveClasses()
-                panel.classList.add('active')
+                toggleButtonD.classList.add('active')
             })
-        })
-        
-        
+        })  
         function removeactiveClasses() {
-            panels.forEach( panel => {
-                panel.classList.remove('active')
+          toggleButtonsforDiretion.forEach( toggleButtonD => {
+            toggleButtonD.classList.remove('active')
+            })
+        }
+
+        // for the Justify Content List items
+         const toggleButtonsforJustifyContent = document.querySelectorAll('.toggleButtonJ');
+        
+         toggleButtonsforJustifyContent.forEach( toggleButtonJ => {
+          toggleButtonJ.addEventListener( 'click', () => {
+                removeactiveClasses()
+                toggleButtonJ.classList.add('active')
+            })
+        })  
+        function removeactiveClasses() {
+          toggleButtonsforJustifyContent.forEach( toggleButtonJ => {
+            toggleButtonJ.classList.remove('active')
             })
         }*/
     </script>
