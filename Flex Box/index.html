@@ -16,9 +16,9 @@
     <div class="Selectproperties" id="Selectproperties">
       <h2>Properties</h2>
       <ul class="ListProperties" id="ListProperties">
-        <li class="toggleButton active" id="Direction">Flex Direction</li>
-        <li class="toggleButton">Justify Content</li>
-        <li class="toggleButton">Align Items</li>
+        <li class="toggleButton active" data-id="direction">Flex Direction</li>
+        <li class="toggleButton" data-id="Justify-content">Justify Content</li>
+        <li class="toggleButton" data-id="thenge">Align Items</li>
         <li class="toggleButton">Align Content</li>
         <li class="toggleButton">Flex Wrap</li>
         <li class="toggleButton">Align Self</li>
@@ -26,7 +26,7 @@
       </ul>
     </div>
  <!--flex-direction section-->   
-    <div class="Flex-Direction" id="Flexdirection">
+    <div class="Flex-Direction content active-content" id="direction">
       <h2>Flex Direction</h2>
       <ul class="FlexDirectionMenu DirectionProperties" id="Directions">
         <li class="toggleButtonD active" value="Row">Row</li>
@@ -68,15 +68,8 @@
       </div>
     </div>
     
-    <div class="MainContainer" style="background-color: #0b0b45;">
-      <div style="background-color: #ffc6d0;"></div>
-      <div style="background-color: #8bc34a;"></div>
-      <div style="background-color: #ff3333;"></div>
-      <div style="background-color: #afff19;"></div>
-      <div style="background-color: #ffae19;"></div>
-    </div>
 <!--flexdirection section-->   
-    <div class="Justify-content" id="Justify-content">
+    <div class="Justify-content content" id="Justify-content">
       <h2>Justify-content</h2>
       <ul class="Justifycontentmenu JustifyProperties" id="Directions">
         <li class="toggleButtonJ active" value="Flex-start">Flex-start</Flex-start></li>
@@ -126,22 +119,36 @@
         <div class="Justifyele elements" style="background-color: #ffae19;"><p>5</p></div>
       </div>
     </div>
-
+    <div id="thenge"><p>Emtpy</p></div>
 
     <script>
-      const toggleButtons = document.querySelectorAll('.toggleButton');
-        
-      toggleButtons.forEach( toggleButton => {
-          toggleButton.addEventListener( 'click', () => {
-                removeactiveClasses()
-                toggleButton.classList.add('active')
-            })
-        })  
-        function removeactiveClasses() {
-          toggleButtons.forEach( toggleButton => {
-            toggleButton.classList.remove('active')
-            })
-        }
+        const toggleButtons = document.querySelectorAll(".toggleButton");
+
+const content = document.querySelectorAll(".content");
+
+toggleButtons.forEach((toggleButton) => {
+  toggleButton.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+
+    // what we need to do is showing the content of this id
+    // and hiding the content that has an id !== of the targetted one
+    content.forEach((text) => {
+      text.classList.remove("active-content");
+    });
+
+    const targettedText = document.getElementById(id);
+    targettedText.classList.add("active-content");
+
+    removeactiveClasses();
+    toggleButton.classList.add("active");
+  });
+});
+function removeactiveClasses() {
+  toggleButtons.forEach((toggleButton) => {
+    toggleButton.classList.remove("active");
+  });
+}
 /*
         // for the Justify-content:  List items
         const toggleButtonsforDiretion = document.querySelectorAll('.toggleButtonD');

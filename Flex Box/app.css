@@ -107,6 +107,13 @@ h1 {
   flex-grow: 1;
 }
 
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
 .container {
   width: 90%;
   margin: auto;
