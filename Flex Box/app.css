@@ -105,6 +105,9 @@ h1 {
   font-size: 20px;
   font-family: montserrat;
   font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
 }
 
 .ListProperties {
@@ -136,25 +139,5 @@ h1 {
   background-color: #ff3333;
   box-shadow: 1px 1px 1px grey;
   color: white;
-}
-
-.sampleli {
-  display: flex;
-}
-
-.sampleli li {
-  width: 100px;
-}
-
-.subli {
-  padding: 0px;
-  display: none;
-}
-
-.sampleli:hover .subli {
-  display: block;
-}
-
-.subli li:hover {
-  transform: scale(1.2);
+  border: 0.5px solid red;
 }
