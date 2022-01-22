@@ -111,8 +111,9 @@ h1 {
 }
 
 .ListProperties {
-  width: 60%;
+  width: 80%;
   display: flex;
+  flex-wrap: nowrap;
   background-color: whitesmoke;
   margin: auto;
   padding: 2px;
@@ -126,6 +127,7 @@ h1 {
   font-size: 16px;
   font-family: rubik;
   flex: 1;
+  flex-basis: 150px;
   border-radius: 1.5em;
   padding: 8px 1px;
   text-align: center;
@@ -140,4 +142,20 @@ h1 {
   box-shadow: 1px 1px 1px grey;
   color: white;
   border: 0.5px solid red;
+}
+
+.toggleButton:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+@media (max-width: 1226px) {
+  .ListProperties {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .toggleButton {
+    flex-basis: 150px;
+  }
 }
