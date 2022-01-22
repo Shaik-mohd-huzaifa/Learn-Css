@@ -18,8 +18,8 @@
       <ul class="ListProperties" id="ListProperties">
         <li class="toggleButton active" data-id="direction">Flex Direction</li>
         <li class="toggleButton" data-id="Justify-content">Justify Content</li>
-        <li class="toggleButton" data-id="thenge">Align Items</li>
-        <li class="toggleButton">Align Content</li>
+        <li class="toggleButton" data-id="Align-items">Align Items</li>
+        <li class="toggleButton" data-id="Align-Content">Align Content</li>
         <li class="toggleButton">Flex Wrap</li>
         <li class="toggleButton">Align Self</li>
         <li class="toggleButton">Flex</li>
@@ -72,13 +72,13 @@
     <div class="Justify-content content" id="Justify-content">
       <h2>Justify-content</h2>
       <ul class="Justifycontentmenu JustifyProperties" id="Directions">
-        <li class="toggleButtonJ active" value="Flex-start">Flex-start</Flex-start></li>
+        <li class="toggleButtonJ active" value="Flex-start">Flex-start</li>
         <li class="toggleButtonJ" value="Flex-end">Flex-end</li>
         <li class="toggleButtonJ" value="Space-around">Space-around</li>
         <li class="toggleButtonJ"value="Space-between">Space-between</li>
         <li class="toggleButtonJ"value="Space-evenly">Space-evenly</li>
       </ul>
-      <h3 class="ContainerHeader">Justify-content: : Flex-start;</h3>
+      <h3 class="ContainerHeader">Justify-content: Flex-start;</h3>
       <div class="Flex-start container" style="background-color: #0b0b45;">
         <div class="Justifyele elements" style="background-color: #ffc6d0;"><p>1</p></div>
         <div class="Justifyele elements" style="background-color: #8bc34a;"><p>2</p></div>
@@ -86,7 +86,7 @@
         <div class="Justifyele elements" style="background-color: #afff19;"><p>4</p></div>
         <div class="Justifyele elements" style="background-color: #ffae19;"><p>5</p></div>
       </div>
-      <h3 class="ContainerHeader">Justify-content: : Flex-end;</h3>
+      <h3 class="ContainerHeader">Justify-content: Flex-end;</h3>
       <div class="Flex-end container" style="background-color: #0b0b45;">
         <div class="Justifyele elements" style="background-color: #ffc6d0;"><p>1</p></div>
         <div class="Justifyele elements" style="background-color: #8bc34a;"><p>2</p></div>
@@ -94,7 +94,7 @@
         <div class="Justifyele elements" style="background-color: #afff19;"><p>4</p></div>
         <div class="Justifyele elements" style="background-color: #ffae19;"><p>5</p></div>
       </div>
-      <h3 class="ContainerHeader">Justify-content: : Space-around;</h3>
+      <h3 class="ContainerHeader">Justify-content: Space-around;</h3>
       <div class="Space-around container" style="background-color: #0b0b45;">
         <div class="Justifyele elements" style="background-color: #ffc6d0;"><p>1</p></div>
         <div class="Justifyele elements" style="background-color: #8bc34a;"><p>2</p></div>
@@ -102,7 +102,7 @@
         <div class="Justifyele elements" style="background-color: #afff19;"><p>4</p></div>
         <div class="Justifyele elements" style="background-color: #ffae19;"><p>5</p></div>
       </div>
-      <h3 class="ContainerHeader">Justify-content: : Space-between;</h3>
+      <h3 class="ContainerHeader">Justify-content: Space-between;</h3>
       <div class="Space-between container" style="background-color: #0b0b45;">
         <div class="Justifyele elements" style="background-color: #ffc6d0;"><p>1</p></div>
         <div class="Justifyele elements" style="background-color: #8bc34a;"><p>2</p></div>
@@ -110,7 +110,7 @@
         <div class="Justifyele elements" style="background-color: #afff19;"><p>4</p></div>
         <div class="Justifyele elements" style="background-color: #ffae19;"><p>5</p></div>
       </div>
-      <h3 class="ContainerHeader">Justify-content: : Space-evenly;</h3>
+      <h3 class="ContainerHeader">Justify-content: Space-evenly;</h3>
       <div class="Space-evenly container" style="background-color: #0b0b45;">
         <div class="Justifyele elements" style="background-color: #ffc6d0;"><p>1</p></div>
         <div class="Justifyele elements" style="background-color: #8bc34a;"><p>2</p></div>
@@ -119,8 +119,101 @@
         <div class="Justifyele elements" style="background-color: #ffae19;"><p>5</p></div>
       </div>
     </div>
-    <div id="thenge"><p>Emtpy</p></div>
 
+   <!-- Align items property -->
+   <h2>Align-items</h2>   
+    <div class="Align-Items content" id="Align-items">
+      <ul class="AlignItemsmenu AlignItemsProperties" id="Directions">
+        <li class="toggleButtonAi active" value="Flex-start">Flex-start</li>
+        <li class="toggleButtonAi" value="Flex-end">Flex-end</li>
+        <li class="toggleButtonAi" value="Space-around">Center</li>
+        <li class="toggleButtonAi"value="Space-between">Baseline</li>
+      </ul>
+      <h3 class="ContainerHeader">Align-Item: Flex-start;</h3>
+      <div class="Flex-startAI container" style="background-color: #0b0b45;">
+        <div class="AlignItemsele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+        <div class="AlignItemsele elements" style="background-color: #8bc34a;"><p>2</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ff3333;"><p>3</p></div>
+        <div class="AlignItemsele elements" style="background-color: #afff19;"><p>4</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ffae19;"><p>5</p></div>
+      </div>
+      <h3 class="ContainerHeader">Align-Items: Flex-end;</h3>
+      <div class="Flex-endAI container" style="background-color: #0b0b45;">
+        <div class="AlignItemsele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+        <div class="AlignItemsele elements" style="background-color: #8bc34a;"><p>2</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ff3333;"><p>3</p></div>
+        <div class="AlignItemsele elements" style="background-color: #afff19;"><p>4</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ffae19;"><p>5</p></div>
+      </div>
+      <h3 class="ContainerHeader">Align-Items: Center;</h3>
+      <div class="CenterAI container" style="background-color: #0b0b45;">
+        <div class="AlignItemsele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+        <div class="AlignItemsele elements" style="background-color: #8bc34a;"><p>2</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ff3333;"><p>3</p></div>
+        <div class="AlignItemsele elements" style="background-color: #afff19;"><p>4</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ffae19;"><p>5</p></div>
+      </div>
+      <h3 class="ContainerHeader">Align-Items: Baseline;</h3>
+      <div class="BaselineAI container" style="background-color: #0b0b45;">
+        <div class="AlignItemsele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+        <div class="AlignItemsele elements" style="background-color: #8bc34a;"><p>2</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ff3333;"><p>3</p></div>
+        <div class="AlignItemsele elements" style="background-color: #afff19;"><p>4</p></div>
+        <div class="AlignItemsele elements" style="background-color: #ffae19;"><p>5</p></div>
+      </div>
+    </div>
+
+   <!--Align Content -->
+   <h2>Align-Content</h2>
+   <div class="Align-Content content" id="Align-Content">
+    <ul class="AlignContentmenu AlignContentProperties" id="Directions">
+      <li class="toggleButtonAc active" value="Flex-start">Flex-start</li>
+      <li class="toggleButtonAc" value="Flex-end">Flex-end</li>
+      <li class="toggleButtonAc" value="Space-around">Space-around</li>
+      <li class="toggleButtonAc"value="Space-between">Space-between</li>
+      <li class="toggleButtonAc"value="Space-between">Space-evenly</li>
+    </ul>
+    <h3 class="ContainerHeader">Align-Content: Flex-start;</h3>
+    <div class="Flex-startAI container" style="background-color: #0b0b45;">
+      <div class="AlignContentele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+      <div class="AlignContentele elements" style="background-color: #8bc34a;"><p>2</p></div>
+      <div class="AlignContentele elements" style="background-color: #ff3333;"><p>3</p></div>
+      <div class="AlignContentele elements" style="background-color: #afff19;"><p>4</p></div>
+      <div class="AlignContentele elements" style="background-color: #ffae19;"><p>5</p></div>
+    </div>
+    <h3 class="ContainerHeader">Align-Content: Flex-end;</h3>
+    <div class="Flex-endAI container" style="background-color: #0b0b45;">
+      <div class="AlignContentele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+      <div class="AlignContentele elements" style="background-color: #8bc34a;"><p>2</p></div>
+      <div class="AlignContentele elements" style="background-color: #ff3333;"><p>3</p></div>
+      <div class="AlignContentele elements" style="background-color: #afff19;"><p>4</p></div>
+      <div class="AlignContentele elements" style="background-color: #ffae19;"><p>5</p></div>
+    </div>
+    <h3 class="ContainerHeader">Align-Content: Space-around;</h3>
+    <div class="CenterAI container" style="background-color: #0b0b45;">
+      <div class="AlignContentele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+      <div class="AlignContentele elements" style="background-color: #8bc34a;"><p>2</p></div>
+      <div class="AlignContentele elements" style="background-color: #ff3333;"><p>3</p></div>
+      <div class="AlignContentele elements" style="background-color: #afff19;"><p>4</p></div>
+      <div class="AlignContentele elements" style="background-color: #ffae19;"><p>5</p></div>
+    </div>
+    <h3 class="ContainerHeader">Align-Content: Space-between;</h3>
+    <div class="BaselineAI container" style="background-color: #0b0b45;">
+      <div class="AlignContentele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+      <div class="AlignContentele elements" style="background-color: #8bc34a;"><p>2</p></div>
+      <div class="AlignContentele elements" style="background-color: #ff3333;"><p>3</p></div>
+      <div class="AlignContentele elements" style="background-color: #afff19;"><p>4</p></div>
+      <div class="AlignContentele elements" style="background-color: #ffae19;"><p>5</p></div>
+    </div>
+  </div>
+  <h3 class="ContainerHeader">Align-Content: Space-evenly;</h3>
+  <div class="BaselineAI container" style="background-color: #0b0b45;">
+    <div class="AlignContentele elements" style="background-color: #ffc6d0;"><p>1</p></div>
+    <div class="AlignContentele elements" style="background-color: #8bc34a;"><p>2</p></div>
+    <div class="AlignContentele elements" style="background-color: #ff3333;"><p>3</p></div>
+    <div class="AlignContentele elements" style="background-color: #afff19;"><p>4</p></div>
+    <div class="AlignContentele elements" style="background-color: #ffae19;"><p>5</p></div>
+  </div>
     <script>
         const toggleButtons = document.querySelectorAll(".toggleButton");
 
@@ -149,6 +242,7 @@ function removeactiveClasses() {
     toggleButton.classList.remove("active");
   });
 }
+
 /*
         // for the Justify-content:  List items
         const toggleButtonsforDiretion = document.querySelectorAll('.toggleButtonD');
