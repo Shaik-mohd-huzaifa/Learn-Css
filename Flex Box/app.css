@@ -39,7 +39,7 @@ h1 {
   border-radius: 50%;
   background-color: #ff1919;
   position: absolute;
-  right: -30px;
+  right: 0px;
   bottom: 0px;
 }
 
@@ -63,6 +63,7 @@ h1 {
   position: absolute;
   left: 30%;
 }
+
 .MainContainer {
   width: 90%;
   margin: auto;
@@ -149,6 +150,101 @@ h1 {
   flex-grow: 1;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.elements {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+h3.ContainerHeader {
+  font-family: Rubik;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.DirectionProperties {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 2px;
+  border-radius: 1.5em;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.DirectionProperties .toggleButtonD {
+  width: 20%;
+  font-size: 16px;
+  font-family: rubik;
+  flex: 1;
+  flex-basis: 150px;
+  border-radius: 1.5em;
+  padding: 8px 1px;
+  text-align: center;
+  list-style: none;
+  cursor: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.DirectionProperties .toggleButtonD.active {
+  background-color: #ff3333;
+  box-shadow: 1px 1px 1px grey;
+  color: white;
+  border: 0.5px solid red;
+}
+
+.JustifyProperties {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 2px;
+  border-radius: 1.5em;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.JustifyProperties .toggleButtonJ {
+  width: 20%;
+  font-size: 16px;
+  font-family: rubik;
+  flex: 1;
+  flex-basis: 150px;
+  border-radius: 1.5em;
+  padding: 8px 1px;
+  text-align: center;
+  list-style: none;
+  cursor: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.JustifyProperties .toggleButtonJ.active {
+  background-color: #ff3333;
+  box-shadow: 1px 1px 1px grey;
+  color: white;
+  border: 0.5px solid red;
+}
+
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
@@ -164,7 +260,7 @@ h1 {
 
 @media (max-width: 760px) {
   h1 {
-    font-size: 35px/*;
+    font-size: 35px;
     font-weight: 600;
   }
   .Obstracle1 {
