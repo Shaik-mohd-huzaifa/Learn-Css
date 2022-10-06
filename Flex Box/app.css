@@ -217,7 +217,8 @@ h3.ContainerHeader {
 }
 /* Justify content container styling*/
 .JustifyProperties,
-.AlignItemsmenu {
+.AlignItemsmenu,
+.AlignContentProperties {
   width: 80%;
   display: flex;
   flex-wrap: nowrap;
@@ -230,7 +231,8 @@ h3.ContainerHeader {
 }
 
 .JustifyProperties .toggleButtonJC,
-.AlignItemsmenu .toggleButtonAI {
+.AlignItemsmenu .toggleButtonAI,
+.AlignContentProperties .toggleButtonAC {
   width: 20%;
   font-size: 16px;
   font-family: rubik;
@@ -246,7 +248,8 @@ h3.ContainerHeader {
 }
 
 .JustifyProperties .toggleButtonJC.active,
-.AlignItemsmenu .toggleButtonAI.active {
+.AlignItemsmenu .toggleButtonAI.active,
+.AlignContentProperties .toggleButtonAC.active {
   background-color: #ff3333;
   box-shadow: 1px 1px 1px grey;
   color: white;
