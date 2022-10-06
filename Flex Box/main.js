@@ -41,9 +41,7 @@ document.querySelectorAll("#FD").forEach((FD) => {
     } else if (userinput === "RR") {
       document.querySelector(".FDcontainer").className =
         "row-reverse " + classi;
-
       //select element by data-set
-      console.log(document.dataset.id("RR").className);
       console.log(document.querySelector(".FDcontainer").className);
     } else if (userinput === "C") {
       document.querySelector(".FDcontainer").className = "column " + classi;
@@ -57,3 +55,14 @@ document.querySelectorAll("#FD").forEach((FD) => {
 });
 
 // Event Listener for Justify Content
+document.querySelectorAll("#JC").forEach((JC) => {
+  JC.addEventListener("click", function (JC) {
+    // Here we get the id of the Clicked element
+    const Dataid = JC.target.dataset.id;
+    console.log(Dataid);
+    const classi = "container containerJC";
+    // classi = classi.replace("", ",");
+    // console.log(classi);
+    document.querySelector(".containerJC").className = Dataid + " " + classi;
+  });
+});
