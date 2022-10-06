@@ -66,3 +66,16 @@ document.querySelectorAll("#JC").forEach((JC) => {
     document.querySelector(".containerJC").className = Dataid + " " + classi;
   });
 });
+
+// Event Listener for Align Items
+document.querySelectorAll("#AI").forEach((AI) => {
+  AI.addEventListener("click", function (AI) {
+    // Here we get the id of the Clicked element
+    const Dataid = AI.target.dataset.id;
+    console.log(Dataid);
+    const classi = "container containerAI";
+    // classi = classi.replace("", ",");
+    // console.log(classi);
+    document.querySelector(".containerAI").className = Dataid + " " + classi;
+  });
+});
