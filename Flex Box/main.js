@@ -68,6 +68,7 @@ document.querySelectorAll("#JC").forEach((JC) => {
     // classi = classi.replace("", ",");
     // console.log(classi);
     document.querySelector(".containerJC").className = Dataid + " " + classi;
+    document.querySelector("#propertyNameJC").textContent = " " + Dataid;
   });
 });
 
@@ -81,6 +82,7 @@ document.querySelectorAll("#AI").forEach((AI) => {
     // classi = classi.replace("", ",");
     // console.log(classi);
     document.querySelector(".containerAI").className = Dataid + " " + classi;
+    document.querySelector("#propertyNameAI").textContent = " " + Dataid;
   });
 });
 
@@ -95,5 +97,6 @@ document.querySelectorAll("#AC").forEach((AC) => {
     // classi = classi.replace("", ",");
     // console.log(classi);
     document.querySelector(".containerAC").className = Dataid + " " + classi;
+    document.querySelector("#propertyNameAC").textContent = " " + Dataid;
   });
 });
