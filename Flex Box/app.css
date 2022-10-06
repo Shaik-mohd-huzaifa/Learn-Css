@@ -216,7 +216,8 @@ h3.ContainerHeader {
   font-weight: 600;
 }
 /* Justify content container styling*/
-.JustifyProperties {
+.JustifyProperties,
+.AlignItemsmenu {
   width: 80%;
   display: flex;
   flex-wrap: nowrap;
@@ -228,7 +229,8 @@ h3.ContainerHeader {
   margin-bottom: 10px;
 }
 
-.JustifyProperties .toggleButtonJC {
+.JustifyProperties .toggleButtonJC,
+.AlignItemsmenu .toggleButtonAI {
   width: 20%;
   font-size: 16px;
   font-family: rubik;
@@ -243,7 +245,8 @@ h3.ContainerHeader {
   cursor: pointer;
 }
 
-.JustifyProperties .toggleButtonJC.active {
+.JustifyProperties .toggleButtonJC.active,
+.AlignItemsmenu .toggleButtonAI.active {
   background-color: #ff3333;
   box-shadow: 1px 1px 1px grey;
   color: white;
