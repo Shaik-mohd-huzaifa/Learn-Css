@@ -293,6 +293,12 @@ h2 {
 .Flex-end.containerAI {
   align-items: flex-end;
 }
+.Center.containerAI {
+  align-items: center;
+}
+.Baseline.containerAI {
+  align-items: baseline;
+}
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
