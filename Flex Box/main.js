@@ -26,6 +26,17 @@ function removeactiveClasses() {
   });
 }
 
+// Event Listener for FD
+
+document.querySelectorAll("#FD").forEach((FD) => {
+  FD.addEventListener("click", function (FD) {
+    // Here we get the id of the Clicked element
+    const userinput = FD.target.dataset.id;
+    console.log(userinput);
+    // if()
+  });
+});
+
 // // for the Justify-content:  List items
 // const toggleButtonsforDirection = document.querySelectorAll(".toggleButtonD");
 
