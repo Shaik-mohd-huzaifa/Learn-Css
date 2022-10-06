@@ -286,6 +286,13 @@ h2 {
   text-align: center;
   margin-top: 30px;
 }
+/* Align Items */
+.Flex-start.containerAI {
+  align-items: flex-start;
+}
+.Flex-end.containerAI {
+  align-items: flex-end;
+}
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
