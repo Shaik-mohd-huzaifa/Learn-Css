@@ -228,7 +228,7 @@ h3.ContainerHeader {
   margin-bottom: 10px;
 }
 
-.JustifyProperties .toggleButtonJ {
+.JustifyProperties .toggleButtonJC {
   width: 20%;
   font-size: 16px;
   font-family: rubik;
@@ -243,7 +243,7 @@ h3.ContainerHeader {
   cursor: pointer;
 }
 
-.JustifyProperties .toggleButtonJ.active {
+.JustifyProperties .toggleButtonJC.active {
   background-color: #ff3333;
   box-shadow: 1px 1px 1px grey;
   color: white;
