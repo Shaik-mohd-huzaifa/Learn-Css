@@ -33,6 +33,7 @@ document.querySelectorAll("#FD").forEach((FD) => {
     // Here we get the id of the Clicked element
     const userinput = FD.target.dataset.id;
     console.log(userinput);
+    const activeli = "toggleButtonD";
     const classi = "container FDcontainer";
     // classi = classi.replace("", ",");
     // console.log(classi);
@@ -42,13 +43,14 @@ document.querySelectorAll("#FD").forEach((FD) => {
     } else if (userinput === "RR") {
       document.querySelector(".FDcontainer").className =
         "row-reverse " + classi;
+      console.log(document.dataset.id("RR").className);
       console.log(document.querySelector(".FDcontainer").className);
     } else if (userinput === "C") {
       document.querySelector(".FDcontainer").className = "column " + classi;
       console.log(document.querySelector(".FDcontainer").className);
     } else if (userinput === "CR") {
       document.querySelector(".FDcontainer").className =
-        "column-reverse" + classi;
+        "column-reverse " + classi;
       console.log(document.querySelector(".FDcontainer").className);
     }
   });
