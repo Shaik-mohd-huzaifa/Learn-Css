@@ -304,7 +304,22 @@ h2 {
 }
 
 /* Align Content */
-
+.Flex-start.containerAC {
+  align-content: flex-start;
+}
+.Flex-end.containerAC {
+  align-content: flex-end;
+}
+.Space-around.containerAC {
+  align-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+.Space-between.containerAC {
+  align-content: flex-end;
+}
+.Space-evenly.containerAC {
+  align-content: flex-end;
+}
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
