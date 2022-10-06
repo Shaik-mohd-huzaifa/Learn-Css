@@ -38,18 +38,22 @@ document.querySelectorAll("#FD").forEach((FD) => {
     if (userinput === "R") {
       document.querySelector(".FDcontainer").className = "row " + classi;
       console.log(document.querySelector(".FDcontainer").className);
+      document.querySelector("#propertyName").textContent = " row";
     } else if (userinput === "RR") {
       document.querySelector(".FDcontainer").className =
         "row-reverse " + classi;
       //select element by data-set
       console.log(document.querySelector(".FDcontainer").className);
+      document.querySelector("#propertyName").textContent = " row-reverse";
     } else if (userinput === "C") {
       document.querySelector(".FDcontainer").className = "column " + classi;
       console.log(document.querySelector(".FDcontainer").className);
+      document.querySelector("#propertyName").textContent = " column";
     } else if (userinput === "CR") {
       document.querySelector(".FDcontainer").className =
         "column-reverse " + classi;
       console.log(document.querySelector(".FDcontainer").className);
+      document.querySelector("#propertyName").textContent = " column-reverse";
     }
   });
 });
