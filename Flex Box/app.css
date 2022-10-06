@@ -302,6 +302,9 @@ h2 {
 .Baseline.containerAI {
   align-items: baseline;
 }
+
+/* Align Content */
+
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
