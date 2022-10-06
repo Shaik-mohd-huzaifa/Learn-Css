@@ -87,7 +87,6 @@ document.querySelectorAll("#AI").forEach((AI) => {
 });
 
 // Event Listener for Align Content
-// Event Listener for Align Items
 document.querySelectorAll("#AC").forEach((AC) => {
   AC.addEventListener("click", function (AC) {
     // Here we get the id of the Clicked element
