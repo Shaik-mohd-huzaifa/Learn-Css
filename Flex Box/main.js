@@ -114,6 +114,8 @@ document.querySelectorAll("#FW").forEach((FW) => {
 
     if (Dataid === "nowrap") {
       document.querySelector(".containerFW").className += " nowrap";
+    } else {
+      document.querySelector(".containerFW").className += " ";
     }
   });
 });
