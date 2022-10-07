@@ -350,6 +350,10 @@ h2 {
   flex-direction: column;
   flex-wrap: nowrap;
 }
+.wrap-reverse.containerFW {
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
