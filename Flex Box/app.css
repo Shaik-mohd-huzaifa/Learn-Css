@@ -306,19 +306,33 @@ h2 {
 /* Align Content */
 .Flex-start.containerAC {
   align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .Flex-end.containerAC {
   align-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .Space-around.containerAC {
   align-content: space-around;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .Space-between.containerAC {
-  align-content: flex-end;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .Space-evenly.containerAC {
-  align-content: flex-end;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
