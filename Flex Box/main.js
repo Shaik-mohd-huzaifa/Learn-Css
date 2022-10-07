@@ -99,3 +99,17 @@ document.querySelectorAll("#AC").forEach((AC) => {
     document.querySelector("#propertyNameAC").textContent = " " + Dataid;
   });
 });
+
+// Event Listener for Flex Wrap
+document.querySelectorAll("#FW").forEach((FW) => {
+  FW.addEventListener("click", function (FW) {
+    // Here we get the id of the Clicked element
+    const Dataid = FW.target.dataset.id;
+    console.log(Dataid);
+    const classi = "container containerFW";
+    // classi = classi.replace("", ",");
+    // console.log(classi);
+    document.querySelector(".containerFW").className = Dataid + " " + classi;
+    document.querySelector("#propertyNameFW").textContent = " " + Dataid;
+  });
+});
