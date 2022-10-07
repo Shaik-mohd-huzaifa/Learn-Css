@@ -337,6 +337,19 @@ h2 {
   flex-direction: column;
   justify-content: center;
 }
+
+.containerFW.nowrap {
+  height: 700px;
+}
+
+.wrap.containerFW {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nowrap.containerFW {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {

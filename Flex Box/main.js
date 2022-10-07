@@ -111,5 +111,9 @@ document.querySelectorAll("#FW").forEach((FW) => {
     // console.log(classi);
     document.querySelector(".containerFW").className = Dataid + " " + classi;
     document.querySelector("#propertyNameFW").textContent = " " + Dataid;
+
+    if (Dataid === "nowrap") {
+      document.querySelector(".containerFW").className += " nowrap";
+    }
   });
 });
