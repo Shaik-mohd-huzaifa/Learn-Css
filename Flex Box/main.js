@@ -136,6 +136,10 @@ document.querySelectorAll("#AS").forEach((AS) => {
       document.querySelector(
         ".Baseline .elements:nth-child(3)"
       ).style.fontSize = "5rem";
+    } else {
+      document.querySelector(
+        ".Baseline .elements:nth-child(3)"
+      ).style.backgroundColor = "white";
     }
   });
 });
