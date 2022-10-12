@@ -368,7 +368,12 @@ h2 {
   align-self: flex-start;
 }
 
-.Flex-endAS.containerAS .elements:nth-of-type(3) {
+.Flex-end.containerAS {
+  justify-content: center;
+  align-items: center;
+}
+
+.Flex-end.containerAS .elements:nth-of-type(3) {
   align-self: flex-end;
 }
 .Center.containerAS {
