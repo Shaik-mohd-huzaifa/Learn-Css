@@ -376,6 +376,7 @@ h2 {
 .Flex-end.containerAS .elements:nth-of-type(3) {
   align-self: flex-end;
 }
+
 .Center.containerAS {
   align-items: flex-start;
 }
