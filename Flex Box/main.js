@@ -119,3 +119,23 @@ document.querySelectorAll("#FW").forEach((FW) => {
     }
   });
 });
+
+// Event Listener for Align Self
+document.querySelectorAll("#AS").forEach((AS) => {
+  AS.addEventListener("click", function (AS) {
+    // Here we get the id of the Clicked element
+    const Dataid = AS.target.dataset.id;
+    console.log(Dataid);
+    const classi = "container containerAS";
+    // classi = classi.replace("", ",");
+    // console.log(classi);
+    document.querySelector(".containerAS").className = Dataid + " " + classi;
+    document.querySelector("#propertyNameAS").textContent = " " + Dataid;
+
+    if (Dataid === "Baseline") {
+      document.querySelector(
+        ".Baseline .elements:nth-child(3)"
+      ).style.fontSize = "5rem";
+    }
+  });
+});
