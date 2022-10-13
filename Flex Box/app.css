@@ -155,7 +155,7 @@ h3.ContainerHeader {
   margin-bottom: 10px;
 }
 
-.DirectionProperties .toggleButtonD {
+.DirectionProperties .toggleButtonFD {
   width: 20%;
   font-size: 16px;
   font-family: rubik;
@@ -170,7 +170,7 @@ h3.ContainerHeader {
   cursor: pointer;
 }
 
-.DirectionProperties .toggleButtonD.active {
+.DirectionProperties .toggleButtonFD.active {
   background-color: #ff3333;
   box-shadow: 1px 1px 1px grey;
   color: white;

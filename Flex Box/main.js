@@ -130,16 +130,38 @@ document.querySelectorAll("#AS").forEach((AS) => {
     // classi = classi.replace("", ",");
     // console.log(classi);
     document.querySelector(".containerAS").className = Dataid + " " + classi;
-    document.querySelector("#propertyNameAS").textContent = " " + Dataid;
 
+    document.querySelector("#propertyNameAS").textContent = " " + Dataid;
     if (Dataid === "Baseline") {
       document.querySelector(
         ".Baseline .elements:nth-child(3)"
       ).style.fontSize = "5rem";
-    } else {
       document.querySelector(
-        ".Baseline .elements:nth-child(3)"
-      ).style.backgroundColor = "white";
+        ".Baseline .elements:nth-child(1)"
+      ).style.fontSize = "6rem";
+    }
+    if (Dataid !== "Baseline") {
+      document.querySelector(
+        `.${Dataid} .elements:nth-child(3)`
+      ).style.fontSize = "";
+      document.querySelector(
+        `.${Dataid} .elements:nth-child(1)`
+      ).style.fontSize = "";
     }
   });
 });
+
+toggleButtonsAS.forEach((toggleButtonAS) => {
+  toggleButtonAS.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesAS();
+    toggleButtonAS.classList.add("active");
+  });
+});
+
+function removeactiveClassesAS() {
+  toggleButtonsAS.forEach((toggleButtonAS) => {
+    toggleButtonAS.classList.remove("active");
+  });
+}
