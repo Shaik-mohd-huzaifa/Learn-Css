@@ -151,6 +151,21 @@ document.querySelectorAll("#AS").forEach((AS) => {
   });
 });
 
+// Event Listener for Flex
+document.querySelectorAll("#FX").forEach((FX) => {
+  FX.addEventListener("click", function (FX) {
+    // Here we get the id of the Clicked element
+    const Dataid = FX.target.dataset.id;
+    console.log(Dataid);
+    const classi = "container containerFX";
+    // classi = classi.replace("", ",");
+    // console.log(classi);
+    document.querySelector(".containerFX").className = Dataid + " " + classi;
+
+    document.querySelector("#propertyNameFX").textContent = " " + Dataid;
+  });
+});
+
 // ToggleButton Function for FlexDirection
 const toggleButtonsFD = document.querySelectorAll(".toggleButtonFD");
 
@@ -262,7 +277,7 @@ function removeactiveClassesAS() {
   });
 }
 
-// ToggleButton Function for Align Self
+// ToggleButton Function for Flex
 const toggleButtonsFX = document.querySelectorAll(".toggleButtonFX");
 
 toggleButtonsFX.forEach((toggleButtonFX) => {
