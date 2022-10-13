@@ -261,3 +261,21 @@ function removeactiveClassesAS() {
     toggleButtonAS.classList.remove("active");
   });
 }
+
+// ToggleButton Function for Align Self
+const toggleButtonsFX = document.querySelectorAll(".toggleButtonFX");
+
+toggleButtonsFX.forEach((toggleButtonFX) => {
+  toggleButtonFX.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesFX();
+    toggleButtonFX.classList.add("active");
+  });
+});
+
+function removeactiveClassesFX() {
+  toggleButtonsFX.forEach((toggleButtonFX) => {
+    toggleButtonFX.classList.remove("active");
+  });
+}
