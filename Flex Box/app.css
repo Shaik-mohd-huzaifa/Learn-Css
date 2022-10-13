@@ -397,6 +397,17 @@ h2 {
   /* height: 300px; */
 }
 
+/* Styling Flex */
+.Flex-grow.containerFX .elements:nth-child(1) {
+  flex-grow: 5;
+}
+.Flex-shrink.containerFX .elements:nth-child(2) {
+  flex-shrink: 2;
+}
+.Flex-basis.containerFX .elements:nth-child(3) {
+  flex-basis: 2;
+}
+
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
