@@ -170,9 +170,81 @@ function removeactiveClassesFD() {
 }
 
 // ToggleButton Function for Justify Content
-// ToggleButton Function for FlexDirection
-// ToggleButton Function for FlexDirection
-// ToggleButton Function for FlexDirection
+
+const toggleButtonsJC = document.querySelectorAll(".toggleButtonJC");
+
+toggleButtonsJC.forEach((toggleButtonJC) => {
+  toggleButtonJC.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesJC();
+    toggleButtonJC.classList.add("active");
+  });
+});
+
+function removeactiveClassesJC() {
+  toggleButtonsJC.forEach((toggleButtonJC) => {
+    toggleButtonJC.classList.remove("active");
+  });
+}
+
+// ToggleButton Function for Align Items
+
+const toggleButtonsAI = document.querySelectorAll(".toggleButtonAI");
+
+toggleButtonsAI.forEach((toggleButtonAI) => {
+  toggleButtonAI.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesAI();
+    toggleButtonAI.classList.add("active");
+  });
+});
+
+function removeactiveClassesAI() {
+  toggleButtonsAI.forEach((toggleButtonAI) => {
+    toggleButtonAI.classList.remove("active");
+  });
+}
+
+// ToggleButton Function for Align Content
+
+const toggleButtonsAC = document.querySelectorAll(".toggleButtonAC");
+
+toggleButtonsAC.forEach((toggleButtonAC) => {
+  toggleButtonAC.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesAC();
+    toggleButtonAC.classList.add("active");
+  });
+});
+
+function removeactiveClassesAC() {
+  toggleButtonsAC.forEach((toggleButtonAC) => {
+    toggleButtonAC.classList.remove("active");
+  });
+}
+
+// ToggleButton Function for Flex-Wrap
+const toggleButtonsFW = document.querySelectorAll(".toggleButtonFW");
+
+toggleButtonsFW.forEach((toggleButtonFW) => {
+  toggleButtonFW.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesFW();
+    toggleButtonFW.classList.add("active");
+  });
+});
+
+function removeactiveClassesFW() {
+  toggleButtonsFW.forEach((toggleButtonFW) => {
+    toggleButtonFW.classList.remove("active");
+  });
+}
+
+// ToggleButton Function for Align Self
 const toggleButtonsAS = document.querySelectorAll(".toggleButtonAS");
 
 toggleButtonsAS.forEach((toggleButtonAS) => {
