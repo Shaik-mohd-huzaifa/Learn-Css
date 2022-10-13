@@ -383,6 +383,17 @@ h2 {
 .Center.containerAS .elements:nth-of-type(3) {
   align-self: center;
 }
+
+.Baseline.containerAS {
+  align-items: center;
+}
+.Baseline.containerAS .elements:nth-of-type(3),
+.Baseline.containerAS .elements:nth-of-type(5),
+.Baseline.containerAS .elements:nth-of-type(2) {
+  align-self: baseline;
+  /* height: 300px; */
+}
+
 /* Styling for the properties bar which shrink when vw is less*/
 @media (max-width: 1226px) {
   .ListProperties {
