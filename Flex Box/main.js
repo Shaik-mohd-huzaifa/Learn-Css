@@ -151,6 +151,30 @@ document.querySelectorAll("#AS").forEach((AS) => {
   });
 });
 
+// ToggleButton Function for FlexDirection
+const toggleButtonsFD = document.querySelectorAll(".toggleButtonFD");
+
+toggleButtonsFD.forEach((toggleButtonFD) => {
+  toggleButtonFD.addEventListener("click", (e) => {
+    // here we get the id of the clicked button
+    const id = e.target.dataset.id;
+    removeactiveClassesFD();
+    toggleButtonFD.classList.add("active");
+  });
+});
+
+function removeactiveClassesFD() {
+  toggleButtonsFD.forEach((toggleButtonFD) => {
+    toggleButtonFD.classList.remove("active");
+  });
+}
+
+// ToggleButton Function for Justify Content
+// ToggleButton Function for FlexDirection
+// ToggleButton Function for FlexDirection
+// ToggleButton Function for FlexDirection
+const toggleButtonsAS = document.querySelectorAll(".toggleButtonAS");
+
 toggleButtonsAS.forEach((toggleButtonAS) => {
   toggleButtonAS.addEventListener("click", (e) => {
     // here we get the id of the clicked button
