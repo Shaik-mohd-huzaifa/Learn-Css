@@ -10,10 +10,21 @@ body {
   background-image: url(images/pexels-gradienta-7135037.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  height: 100%;
 }
 
 .content h1 {
   margin: 0;
   color: white;
   font-family: montserrat;
+}
+
+.list-items {
+  width: 50%;
+  height: 100%;
 }
