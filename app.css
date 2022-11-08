@@ -40,11 +40,34 @@ body {
   font-weight: 300;
 }
 
-.list-items {
+.tableOfcontents {
   width: 50%;
   height: 100%;
   font-family: "Montserrat";
   color: white;
+  padding-top: 5%;
+  box-sizing: border-box;
+}
+
+.tableOfcontents h2 {
+  font-size: 3rem;
+  height: 30%;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.item-list {
+  height: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  font-size: 2rem;
+  font-family: Poppins;
+}
+
+.item-list {
+  list-style: none;
 }
