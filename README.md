@@ -25,4 +25,29 @@ Topics covered in FlexBox:
 - Align Items
 - Align Content
 - Flex Wrap
+- Align Self
 - Flex (Shorthand for Flex Grow, Shrinking and Flex Basis)
+
+### Flex Direction
+
+It is used to set the direction of the elements inside the container. There are mainly 4 directions in which the elements can be arranged.
+
+Attributes:
+
+- Row
+- Row Reverse
+- Column
+- Column Reverse
+
+### Justify Content
+
+Justify content is used to align the elements inside the container. It is used to align the elements in the main axis. The main axis is the axis in which the elements are arranged. The main axis is the same as the direction of the elements. The Main axis changes if the direction of the elements is changed in Flex direction
+
+Attributes:
+
+- Flex Start
+- Flex End
+- Center
+- Space Between
+- Space Around
+- Space Evenly
