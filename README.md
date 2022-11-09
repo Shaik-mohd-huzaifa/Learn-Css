@@ -2,7 +2,7 @@
 
 This repository will help you learn advance technique in Css. Learn how everything works in Css and how to use it in your project.
 
-[Link to Open the Page to Learn CSS Practically]("index.html")
+[Link to Open the Page to Learn FlexBox Practically]("Flex")
 
 ## Table of Contents
 
