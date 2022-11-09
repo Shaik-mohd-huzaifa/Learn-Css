@@ -51,17 +51,18 @@ body {
 
 .tableOfcontents h2 {
   font-size: 3rem;
-  height: 30%;
   font-weight: 600;
   margin: 0;
   width: 100%;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .item-list {
   height: 70%;
-  width: 100%;
   display: flex;
+  padding-left: 5rem;
+  box-sizing: border-box;
   flex-direction: column;
   align-content: center;
   font-size: 2rem;
@@ -70,4 +71,15 @@ body {
 
 .item-list {
   list-style: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.item-list li {
+  margin-bottom: 1rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.item-list li:hover {
+  transform: scale(1.05);
 }
