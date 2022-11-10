@@ -2,7 +2,7 @@
 
 This repository will help you learn advance technique in Css. Learn how everything works in Css and how to use it in your project.
 
-[Link to Open the Page to Learn FlexBox Practically]("index.html")
+[Link to Open the Page to Learn FlexBox Practically]("https://github.com/Shaik-mohd-huzaifa/Learn-Css/blob/09a552a667d3c54c4629f405fbdeff5de1024057/index.html")
 
 ## Table of Contents
 
