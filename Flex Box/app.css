@@ -65,11 +65,12 @@ h1 {
 }
 
 .Selectproperties h2 {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 500;
   color: black;
   margin: 15px auto;
+  padding: 0px 20px;
   /* letter-spacing: 1px; */
   /*background-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;*/
@@ -81,7 +82,7 @@ li {
 
 h2,
 h3 {
-  font-family: "Montserrat" !important;
+  font-family: "poppins";
   margin: 15px auto;
 }
 
@@ -151,10 +152,13 @@ h3 {
 }
 
 h3.ContainerHeader {
-  font-family: Rubik;
-  width: 100%;
+  font-family: "Poppins";
+  width: fit-content;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
+  padding: 0px 15px;
+  background-color: #dedede;
+  border-radius: 4px;
   font-weight: 500;
 }
 
@@ -315,7 +319,7 @@ h2 {
   /* word-spacing: -3px; */
   text-align: center;
   font-weight: 500;
-  padding: 3px 10px;
+  padding: 0px 15px;
   border-radius: 4px;
   width: fit-content;
   background-color: #dedede;
