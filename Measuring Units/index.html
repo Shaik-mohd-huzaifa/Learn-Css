@@ -26,7 +26,7 @@
         </div>
       <div class="row-box percentage">
         <h2>% - percentage</h2>
-        <p>
+        <p style="margin: 5px 0;">
           This percentage unit is used when we are trying to give sizing based on the parents container width.
         </p>
         <div class="examples">
@@ -34,9 +34,17 @@
             <div>The width of this container is 50% percent of its parent. That is the parent width is 300px and the child width will be 150px</div></div>
           <p class="font-size-per">Percentage in font is not widely used but it set the font-size to the 100% of the base-font-size of the page or its parent. Now the font-size of its parent is set to 30px and the font-size of this is set to 50% that is 50px.</p>
         </div>
-        
-        
       </div>
+    <div class="row-box percentage">
+      <h2>em units </h2>
+      <p>
+       Em units are pretty much similar to the percentage unit but it adds the size based on the parents font size and it don't inherit the page font-size. Here 1em is = entire font size. Example 1em of 10px is 10px</p>
+      <div class="examples">
+        <div class="width-in-em">
+          <div>The width of this container is 15em .That is the parent 15x size of the parents font-size. this parents font-size is set to 10px then the width will be 50px</div></div>
+        <p class="font-size-rem">The font-size is set to 1.5em that is 15px. Based on the parent-font-size all the child elements can bi sized</p>
+      </div>
+    </div>
     </div>
     <script src="main.js"></script>
   </body>
