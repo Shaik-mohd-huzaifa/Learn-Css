@@ -19,7 +19,34 @@ p {
   padding: 0.5rem 1rem;
   background-color: rgb(205, 205, 205);
   font-family: "poppins";
-  font-size: 15px;
+  font-size: 1.8rem;
   border-radius: 5px;
   margin: 0.5rem auto;
+}
+
+.container {
+  width: 100%;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.examples {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.width-in-px {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
