@@ -9,7 +9,11 @@
   </head>
   <body>
     <h1>Measuring Units</h1>
-    <p>Measuring units plays a very important role in styling a webpage</p>
+    <p style="margin: 1rem 3%">
+      Measuring units plays a very important role in styling a webpage. All
+      these units mentioned below are commonly used by the developer. Where
+      there are allot of Css measuring units
+    </p>
     <div class="container">
       <div class="row-box pixels">
         <h2>Px - Pixels</h2>
@@ -24,28 +28,76 @@
           <p class="width-in-px">This div has a width and height of 50px</p>
           <p class="font-size-px">This font has 30px of the font-size</p>
         </div>
-      <div class="row-box percentage">
-        <h2>% - percentage</h2>
-        <p style="margin: 5px 0;">
-          This percentage unit is used when we are trying to give sizing based on the parents container width.
-        </p>
-        <div class="examples">
-          <div class="width-in-per">
-            <div>The width of this container is 50% percent of its parent. That is the parent width is 300px and the child width will be 150px</div></div>
-          <p class="font-size-per">Percentage in font is not widely used but it set the font-size to the 100% of the base-font-size of the page or its parent. Now the font-size of its parent is set to 30px and the font-size of this is set to 50% that is 50px.</p>
+        <div class="row-box percentage">
+          <h2>% - percentage</h2>
+          <p style="margin: 5px 0">
+            This percentage unit is used when we are trying to give sizing based
+            on the parents container width.
+          </p>
+          <div class="examples">
+            <div class="width-in-per">
+              <div>
+                The width of this container is 50% percent of its parent. That
+                is the parent width is 300px and the child width will be 150px
+              </div>
+            </div>
+            <p class="font-size-per">
+              Percentage in font is not widely used but it set the font-size to
+              the 100% of the base-font-size of the page or its parent. Now the
+              font-size of its parent is set to 30px and the font-size of this
+              is set to 50% that is 50px.
+            </p>
+          </div>
+        </div>
+        <div class="row-box em">
+          <h2>em units</h2>
+          <p>
+            Em units are pretty much similar to the percentage unit but it adds
+            the size based on the parents font size and it don't inherit the
+            page font-size. Here 1em is = entire font size. Example 1em of 10px
+            is 10px. This unit can be used to create a relative environment in a
+            container. For Example: Styling buttons when the border-radius
+            should be much relative to width when the width is changed even the
+            border-radius must be changed.
+          </p>
+          <div class="examples">
+            <div class="width-in-em">
+              <div>
+                The width of this container is 15em .That is the parent 15x size
+                of the parents font-size. this parents font-size is set to 10px
+                then the width will be 50px
+              </div>
+            </div>
+            <p class="font-size-em">
+              The font-size is set to 1.5em that is 15px. Based on the
+              parent-font-size all the child elements can be sized
+            </p>
+          </div>
+        </div>
+        <div class="row-box rem">
+          <h2>Rem units</h2>
+          <p>
+            Rem units are the units used to style the entire pages elements
+            based on one default font-size. The font size is declared in the
+            html query styling and that font-size is set as default font size of
+            that page. Example if the html font size is 10px then 1rem unit will
+            be 10px no matter in which container you get the same size. These
+            units can be used in any Css property following border, padding,
+            margin, border-radius and much more.
+          </p>
+          <div class="examples">
+            <div class="width-in-rem">
+              The width of this container is 30rem that is 300px. The page
+              font-size is set to 10px. 30X times of the base font-size
+            </div>
+            <p class="font-size-rem">
+              The font-size is set to 2rem that is 20px.
+            </p>
+          </div>
         </div>
       </div>
-    <div class="row-box percentage">
-      <h2>em units </h2>
-      <p>
-       Em units are pretty much similar to the percentage unit but it adds the size based on the parents font size and it don't inherit the page font-size. Here 1em is = entire font size. Example 1em of 10px is 10px</p>
-      <div class="examples">
-        <div class="width-in-em">
-          <div>The width of this container is 15em .That is the parent 15x size of the parents font-size. this parents font-size is set to 10px then the width will be 50px</div></div>
-        <p class="font-size-rem">The font-size is set to 1.5em that is 15px. Based on the parent-font-size all the child elements can bi sized</p>
-      </div>
     </div>
-    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
