@@ -38,7 +38,9 @@ h2 {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
+  justify-content: center;
+  column-gap: 20px;
 }
 
 .width-in-px {
@@ -47,6 +49,14 @@ h2 {
   background-color: coral;
   color: white;
   display: flex;
+  margin: 0;
   align-items: center;
   text-align: center;
+}
+
+.font-size-px {
+  font-size: 30px;
+  margin: 0;
+  background-color: blueviolet;
+  color: white;
 }
